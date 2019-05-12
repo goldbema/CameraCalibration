@@ -99,8 +99,8 @@ def main(args):
     
     print('   Focal Length: [ {:.5f}  {:.5f} ]'.format(K_opt[0,0], K_opt[1,1]))
     print('Principal Point: [ {:.5f}  {:.5f} ]'.format(K_opt[0,2], K_opt[1,2]))
-    print('           Skew: [ {:.5f} ]'.format(K_opt[0,1]))
-    print('     Distortion: [ {:.5f}  {:.5f} ]'.format(k_opt[0], k_opt[1]))
+    print('           Skew: [ {:.7f} ]'.format(K_opt[0,1]))
+    print('     Distortion: [ {:.6f}  {:.6f} ]'.format(k_opt[0], k_opt[1]))
 
     visualize.visualize_camera_frame(model, extrinsics_opt)
     visualize.visualize_world_frame(model, extrinsics_opt)
